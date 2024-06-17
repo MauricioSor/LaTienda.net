@@ -1,0 +1,6 @@
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Entidades\bin\Debug\Sistema.Entidades.dll
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Entidades\bin\Debug\Sistema.Entidades.pdb
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csproj.AssemblyReference.cache
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.dll
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Entidades\obj\Debug\Sistema.Entidades.pdb
