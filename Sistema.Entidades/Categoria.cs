@@ -9,8 +9,8 @@ namespace Sistema.Entidades
     public class Categoria
     {
         public int IdCategoria { get; set; }
-        public string nombre { get; set; }
-        public bool estado { get; set; }
-
+        public string Nombre { get; set; }
+        public bool Estado { get; set; }
+        public string Descripcion { get; set; }
     }
 }
