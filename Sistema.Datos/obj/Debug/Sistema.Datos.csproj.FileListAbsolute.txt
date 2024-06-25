@@ -1,2 +1,9 @@
 C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.AssemblyReference.cache
 C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\obj\Debug\Sistema.Datos.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\bin\Debug\Sistema.Datos.dll
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\bin\Debug\Sistema.Datos.pdb
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\bin\Debug\Sistema.Entidades.dll
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\bin\Debug\Sistema.Entidades.pdb
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\obj\Debug\Sistema..9F9C34FB.Up2Date
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\obj\Debug\Sistema.Datos.dll
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Datos\obj\Debug\Sistema.Datos.pdb
