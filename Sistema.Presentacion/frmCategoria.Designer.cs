@@ -99,7 +99,7 @@
             // 
             // btnDesactivar
             // 
-            this.btnDesactivar.Location = new System.Drawing.Point(321, 386);
+            this.btnDesactivar.Location = new System.Drawing.Point(324, 386);
             this.btnDesactivar.Name = "btnDesactivar";
             this.btnDesactivar.Size = new System.Drawing.Size(75, 23);
             this.btnDesactivar.TabIndex = 6;
