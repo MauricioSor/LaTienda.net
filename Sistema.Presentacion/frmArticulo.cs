@@ -335,11 +335,25 @@ namespace Sistema.Presentacion
         private void frmArticulo_Load(object sender, EventArgs e)
         {
             this.Listar();
+            this.CargarCategoria();
         }
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
             this.Buscar();
+        }
+        private void  CargarCategoria()
+        {
+            try
+            {
+                cboCategoria.DataSource = NCategoria.Seleccionar();
+                cboCategoria.ValueMember = "idcategoria";
+                cboCategoria.DisplayMember = "nombre";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message+ex.StackTrace); 
+            }
         }
     }
 }

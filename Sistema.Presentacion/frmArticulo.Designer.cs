@@ -51,6 +51,8 @@
             this.TabGeneral1 = new System.Windows.Forms.TabPage();
             this.DgvListado = new System.Windows.Forms.DataGridView();
             this.tabGeneral = new System.Windows.Forms.TabControl();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.TabGeneral1.SuspendLayout();
@@ -64,7 +66,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(65, 248);
+            this.btnActualizar.Location = new System.Drawing.Point(59, 390);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(142, 23);
             this.btnActualizar.TabIndex = 8;
@@ -74,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 203);
+            this.label3.Location = new System.Drawing.Point(79, 345);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 13);
             this.label3.TabIndex = 7;
@@ -82,7 +84,7 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(65, 248);
+            this.btnInsertar.Location = new System.Drawing.Point(207, 390);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(142, 23);
             this.btnInsertar.TabIndex = 6;
@@ -91,7 +93,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(213, 248);
+            this.btnCancelar.Location = new System.Drawing.Point(355, 390);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 23);
             this.btnCancelar.TabIndex = 5;
@@ -108,7 +110,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(65, 72);
+            this.txtDescripcion.Location = new System.Drawing.Point(104, 221);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(272, 73);
@@ -116,7 +118,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(65, 35);
+            this.txtNombre.Location = new System.Drawing.Point(104, 177);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(272, 20);
             this.txtNombre.TabIndex = 2;
@@ -124,7 +126,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 79);
+            this.label2.Location = new System.Drawing.Point(25, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 1;
@@ -132,6 +134,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cboCategoria);
+            this.tabPage2.Controls.Add(this.lblCategoria);
             this.tabPage2.Controls.Add(this.btnActualizar);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.btnInsertar);
@@ -151,7 +155,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 35);
+            this.label1.Location = new System.Drawing.Point(25, 177);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 0;
@@ -270,6 +274,23 @@
             this.tabGeneral.Size = new System.Drawing.Size(800, 450);
             this.tabGeneral.TabIndex = 1;
             // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(25, 51);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(62, 13);
+            this.lblCategoria.TabIndex = 10;
+            this.lblCategoria.Text = "Categoria(*)";
+            // 
+            // cboCategoria
+            // 
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(104, 48);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(272, 21);
+            this.cboCategoria.TabIndex = 11;
+            // 
             // frmArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,5 +335,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.ComboBox cboCategoria;
     }
 }

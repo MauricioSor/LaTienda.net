@@ -98,5 +98,6 @@ namespace Sistema.Negocio
             DArticulo Datos = new DArticulo();
             return Datos.Desactivar(Id);
         }
+
     }
 }
