@@ -129,7 +129,7 @@ namespace Sistema.Datos
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 SqlCommand Comando = new SqlCommand("articulo_actualizar", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
-                Comando.Parameters.Add("@idcategoria", SqlDbType.Int).Value = obj.IdArituclo;
+                Comando.Parameters.Add("@idcategoria", SqlDbType.Int).Value = obj.IdArticulo;
                 Comando.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 Comando.Parameters.Add("@codigo", SqlDbType.Int).Value = obj.Codigo;
                 Comando.Parameters.Add("@precio_venta", SqlDbType.Decimal).Value = obj.PrecioVenta;

@@ -8,12 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BarcodeStandard;
+using SkiaSharp;
 namespace Sistema.Presentacion
 {
     public partial class frmArticulo : Form
     {
         private string _nombreAnt;
+        private string _rutaOrigen;
+        private string _directorio="D:\\sistema\\";
         public frmArticulo()
         {
             InitializeComponent();
@@ -96,7 +99,7 @@ namespace Sistema.Presentacion
                 }
                 else
                 {
-                    rpta = NArticulo.Insertar(txtNombre.Text.Trim(), txtDescripcion.Text.Trim());
+                    rpta = NArticulo.Insertar(Convert.ToInt32(cboCategoria.SelectedValue),txtNombre.Text.Trim(),TxtCodigo.Text.Trim(),Convert.ToDecimal(TxtPrecioVenta),Convert.ToInt32(TxtStock.Text),txtImagen.Text.Trim(), txtDescripcion.Text.Trim());
                     if (rpta.Equals("OK"))
                     {
                         this.MensajeOk("Se insertó de forma correcta el registro");
@@ -163,7 +166,7 @@ namespace Sistema.Presentacion
                 }
                 else
                 {
-                    rpta = NArticulo.Actualizar(Convert.ToInt32(txtId.Text), this._nombreAnt, txtNombre.Text.Trim(), txtDescripcion.Text.Trim());
+                    rpta = NArticulo.Actualizar(Convert.ToInt32(txtNombre.Text),Convert.ToInt32(cboCategoria.SelectedValue),this._nombreAnt,TxtCodigo.Text, Convert.ToDecimal(TxtPrecioVenta), txtImagen.Text.Trim(), Convert.ToInt32(TxtStock.Text), txtNombre.Text.Trim(), txtDescripcion.Text.Trim());
                     if (rpta.Equals("OK"))
                     {
                         this.MensajeOk("Se actualizó de forma correctamente el registro");
@@ -354,6 +357,28 @@ namespace Sistema.Presentacion
             {
                 MessageBox.Show(ex.Message+ex.StackTrace); 
             }
+        }
+
+        private void btnCargarImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.Filter = "Image Files (*.jpg, *.jpeg, *jpe, *.jfif, *.png) | *.jpg; *.jpeg;";
+            if (file.ShowDialog()==DialogResult.OK)
+            {
+                PicImagen.Image=Image.FromFile(file.FileName);
+                txtImagen.Text=file.FileName.Substring(file.FileName.LastIndexOf("\\")+1);
+                this._rutaOrigen = file.FileName;
+
+            }
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            BarcodeStandard.Barcode Codigo = new BarcodeStandard.Barcode();
+            Codigo.IncludeLabel= true;
+            SKColorF skBackgroundColor = new SKColorF(1.0f, 1.0f, 1.0f); // Color blanco en formato SKColorF
+            SKColorF skForegroundColor = new SKColorF(0.0f, 0.0f, 0.0f);
+            pnlCodigo.BackgroundImage = Codigo.Encode(BarcodeStandard.Type.Code128, TxtCodigo.Text, skForegroundColor, skBackgroundColor, 104, 123);
         }
     }
 }

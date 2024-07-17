@@ -12,8 +12,13 @@ namespace Sistema.Presentacion
 {
     public partial class frmPrincipal : Form
     {
+        #region Variables
         private int childFormNumber = 0;
-
+        
+        #endregion
+        #region Methods
+        
+        #endregion
         public frmPrincipal()
         {
             InitializeComponent();
@@ -49,6 +54,7 @@ namespace Sistema.Presentacion
             }
         }
 
+        #region Events
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -132,5 +138,6 @@ namespace Sistema.Presentacion
             frm.MdiParent = this;
             frm.Show();
         }
+        #endregion
     }
 }

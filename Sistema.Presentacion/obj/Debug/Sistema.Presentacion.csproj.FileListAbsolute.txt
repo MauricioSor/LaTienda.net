@@ -20,3 +20,4 @@ C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\
 C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Presentacion\bin\Debug\Sistema.Presentacion.application
 C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Presentacion\obj\Debug\Sistema.Presentacion.exe.manifest
 C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Presentacion\obj\Debug\Sistema.Presentacion.application
+C:\Users\mauri\Desktop\Proyectos\Curso.net con capas\Proyecto\solución\Sistema\Sistema.Presentacion\obj\Debug\Sistema.Presentacion.frmArticulo.resources

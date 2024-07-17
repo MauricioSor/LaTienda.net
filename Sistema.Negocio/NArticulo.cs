@@ -37,6 +37,8 @@ namespace Sistema.Negocio
                 Obj.Nombre = Nombre;
                 Obj.Stock= Stock;
                 Obj.PrecioVenta = PrecioDeVenta;
+                Obj.Imagen = Imagen;
+                Obj.Descripcion = Descripcion;
                 return Datos.Insertar(Obj);
             }
         }

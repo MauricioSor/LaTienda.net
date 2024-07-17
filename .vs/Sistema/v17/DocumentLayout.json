@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|c:\\users\\mauri\\desktop\\proyectos\\curso.net con capas\\proyecto\\soluci\u00F3n\\sistema\\sistema.presentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|c:\\users\\mauri\\desktop\\proyectos\\curso.net con capas\\proyecto\\soluci\u00F3n\\sistema\\sistema.presentacion\\frmarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\frmarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32C840CD-FFC7-424E-8D38-092442DCD2D6}|Sistema.Negocio\\Sistema.Negocio.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.negocio\\ncategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64C1AB9E-170F-43D7-9017-5D91B02C5A08}|Sistema.Entidades\\Sistema.Entidades.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,11 +31,12 @@
       "RelativeMoniker": "D:0:0:{0EAC94B8-00D4-4B63-A099-1982270BFD55}|Sistema.Datos\\Sistema.Datos.csproj|solutionrelative:sistema.datos\\dcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sistema.Presentacion||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|solutionrelative:sistema.presentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44A9FCDD-8D7C-4A33-95E0-735F6E016562}|Sistema.Presentacion\\Sistema.Presentacion.csproj|C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\sistema.presentacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -49,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,14 +59,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmCategoria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmCategoria.cs",
-              "RelativeDocumentMoniker": "Sistema.Presentacion\\frmCategoria.cs",
-              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmCategoria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sistema.Presentacion\\frmCategoria.cs [Dise\u00F1o]",
+              "Title": "frmArticulo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmArticulo.cs",
+              "RelativeDocumentMoniker": "Sistema.Presentacion\\frmArticulo.cs",
+              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmArticulo.cs [Design]",
+              "RelativeToolTip": "Sistema.Presentacion\\frmArticulo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:00:43.385Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-07-14T21:20:09.384Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmArticulo.cs",
+              "RelativeDocumentMoniker": "Sistema.Presentacion\\frmArticulo.cs",
+              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmArticulo.cs",
+              "RelativeToolTip": "Sistema.Presentacion\\frmArticulo.cs",
+              "ViewState": "AQIAAFoBAAAAAAAAAAAMwHABAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T21:23:37.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Sistema.Presentacion\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs",
+              "RelativeToolTip": "Sistema.Presentacion\\frmPrincipal.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAcwDgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T00:09:44.742Z"
             },
             {
               "$type": "Document",
@@ -75,23 +101,45 @@
               "RelativeDocumentMoniker": "Sistema.Negocio\\NCategoria.cs",
               "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Negocio\\NCategoria.cs",
               "RelativeToolTip": "Sistema.Negocio\\NCategoria.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAEwDQAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T00:35:53.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T21:15:40.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\Program.cs",
+              "RelativeDocumentMoniker": "Sistema.Presentacion\\Program.cs",
+              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\Program.cs",
+              "RelativeToolTip": "Sistema.Presentacion\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:26:11.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "frmCategoria.cs",
               "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmCategoria.cs",
               "RelativeDocumentMoniker": "Sistema.Presentacion\\frmCategoria.cs",
               "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmCategoria.cs",
               "RelativeToolTip": "Sistema.Presentacion\\frmCategoria.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAWwEsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwEsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:18:49.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T23:18:49.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Datos\\DCategoria.cs",
+              "RelativeDocumentMoniker": "Sistema.Datos\\DCategoria.cs",
+              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Datos\\DCategoria.cs",
+              "RelativeToolTip": "Sistema.Datos\\DCategoria.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwPAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T01:36:49.363Z"
             },
             {
               "$type": "Document",
@@ -107,53 +155,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DCategoria.cs",
-              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Datos\\DCategoria.cs",
-              "RelativeDocumentMoniker": "Sistema.Datos\\DCategoria.cs",
-              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Datos\\DCategoria.cs",
-              "RelativeToolTip": "Sistema.Datos\\DCategoria.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T01:36:49.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs",
-              "RelativeDocumentMoniker": "Sistema.Presentacion\\frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs",
-              "RelativeToolTip": "Sistema.Presentacion\\frmPrincipal.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAlwBAAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T22:27:16.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\Program.cs",
-              "RelativeDocumentMoniker": "Sistema.Presentacion\\Program.cs",
-              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\Program.cs",
-              "RelativeToolTip": "Sistema.Presentacion\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T22:26:11.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "frmPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs",
               "RelativeDocumentMoniker": "Sistema.Presentacion\\frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sistema.Presentacion\\frmPrincipal.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\frmPrincipal.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Sistema.Presentacion\\frmPrincipal.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T22:27:08.003Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-22T22:27:08.003Z"
             },
             {
               "$type": "Document",
@@ -165,19 +174,7 @@
               "RelativeToolTip": "Sistema.Presentacion\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-16T20:45:09.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Sistema.Presentacion",
-              "DocumentMoniker": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\Sistema.Presentacion.csproj",
-              "RelativeDocumentMoniker": "Sistema.Presentacion\\Sistema.Presentacion.csproj",
-              "ToolTip": "C:\\Users\\mauri\\Desktop\\Proyectos\\Curso.net con capas\\Proyecto\\soluci\u00F3n\\Sistema\\Sistema.Presentacion\\Sistema.Presentacion.csproj",
-              "RelativeToolTip": "Sistema.Presentacion\\Sistema.Presentacion.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-16T20:42:39.752Z"
+              "WhenOpened": "2024-06-16T20:45:09.884Z"
             }
           ]
         }
