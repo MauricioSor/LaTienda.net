@@ -10,13 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BarcodeStandard;
 using SkiaSharp;
+using BarcodeLib;
+using System.Drawing.Imaging;
+using System.IO;
 namespace Sistema.Presentacion
 {
     public partial class frmArticulo : Form
     {
         private string _nombreAnt;
         private string _rutaOrigen;
-        private string _directorio="D:\\sistema\\";
+        private string _directorio = "D:\\sistema\\";
+        private string _rutaDestino;
         public frmArticulo()
         {
             InitializeComponent();
@@ -52,18 +56,20 @@ namespace Sistema.Presentacion
         {
             DgvListado.Columns[0].Visible = false;
             DgvListado.Columns[2].Visible = false;
-            DgvListado.Columns[0].Width = 50;
-            DgvListado.Columns[1].Width = 100;
+            DgvListado.Columns[0].Width = 100;
+            DgvListado.Columns[1].Width = 50;
             DgvListado.Columns[3].Width = 100;
-            DgvListado.Columns[3].HeaderText = "Categoria";
+            DgvListado.Columns[3].HeaderText = "Categoría";
             DgvListado.Columns[4].Width = 100;
             DgvListado.Columns[4].HeaderText = "Código";
-            DgvListado.Columns[5].Width = 100;
+            DgvListado.Columns[5].Width = 150;
             DgvListado.Columns[6].Width = 100;
             DgvListado.Columns[6].HeaderText = "Precio Venta";
-            DgvListado.Columns[7].Width = 100;
-            DgvListado.Columns[8].HeaderText = "Descripción";
-            DgvListado.Columns[8].Width = 100;
+            DgvListado.Columns[7].Width = 60;
+            DgvListado.Columns[8].Width = 200;
+            DgvListado.Columns[8].HeaderText = "Imagen";
+            DgvListado.Columns[9].Width = 100;
+            DgvListado.Columns[10].Width = 100;
         }
 
 
@@ -85,6 +91,20 @@ namespace Sistema.Presentacion
             btnDesactivar.Visible = false;
             btnEliminar.Visible = false;
             chkSeleccionar.Checked = false;
+            _rutaDestino = "";
+            _rutaDestino = "";
+            PicImagen.Image = null;
+            pnlCodigo.BackgroundImage = null;
+            TxtStock.Clear();
+            txtImagen.Clear();
+            TxtPrecioVenta.Clear();
+               
+            DgvListado.Columns[0].Visible=false;
+            btnActivar.Visible = false;
+            btnDesactivar.Visible = false;
+            btnEliminar.Visible = false;
+            chkSeleccionar.Checked=false;
+
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
@@ -99,7 +119,7 @@ namespace Sistema.Presentacion
                 }
                 else
                 {
-                    rpta = NArticulo.Insertar(Convert.ToInt32(cboCategoria.SelectedValue),txtNombre.Text.Trim(),TxtCodigo.Text.Trim(),Convert.ToDecimal(TxtPrecioVenta),Convert.ToInt32(TxtStock.Text),txtImagen.Text.Trim(), txtDescripcion.Text.Trim());
+                    rpta = NArticulo.Insertar(Convert.ToInt32(cboCategoria.SelectedValue), txtNombre.Text.Trim(), TxtCodigo.Text.Trim(), Convert.ToDecimal(TxtPrecioVenta), Convert.ToInt32(TxtStock.Text), txtImagen.Text.Trim(), txtDescripcion.Text.Trim());
                     if (rpta.Equals("OK"))
                     {
                         this.MensajeOk("Se insertó de forma correcta el registro");
@@ -166,7 +186,7 @@ namespace Sistema.Presentacion
                 }
                 else
                 {
-                    rpta = NArticulo.Actualizar(Convert.ToInt32(txtNombre.Text),Convert.ToInt32(cboCategoria.SelectedValue),this._nombreAnt,TxtCodigo.Text, Convert.ToDecimal(TxtPrecioVenta), txtImagen.Text.Trim(), Convert.ToInt32(TxtStock.Text), txtNombre.Text.Trim(), txtDescripcion.Text.Trim());
+                    rpta = NArticulo.Actualizar(Convert.ToInt32(txtNombre.Text), Convert.ToInt32(cboCategoria.SelectedValue), this._nombreAnt, TxtCodigo.Text, Convert.ToDecimal(TxtPrecioVenta), txtImagen.Text.Trim(), Convert.ToInt32(TxtStock.Text), txtNombre.Text.Trim(), txtDescripcion.Text.Trim());
                     if (rpta.Equals("OK"))
                     {
                         this.MensajeOk("Se actualizó de forma correctamente el registro");
@@ -345,7 +365,7 @@ namespace Sistema.Presentacion
         {
             this.Buscar();
         }
-        private void  CargarCategoria()
+        private void CargarCategoria()
         {
             try
             {
@@ -353,20 +373,20 @@ namespace Sistema.Presentacion
                 cboCategoria.ValueMember = "idcategoria";
                 cboCategoria.DisplayMember = "nombre";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message+ex.StackTrace); 
+                MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog file = new OpenFileDialog();
-            file.Filter = "Image Files (*.jpg, *.jpeg, *jpe, *.jfif, *.png) | *.jpg; *.jpeg;";
-            if (file.ShowDialog()==DialogResult.OK)
+            file.Filter = "Image Files (*.jpg, *.jpeg, *jpeg, *.jfif, *.png) | *.jpg; *.jpeg;";
+            if (file.ShowDialog() == DialogResult.OK)
             {
-                PicImagen.Image=Image.FromFile(file.FileName);
-                txtImagen.Text=file.FileName.Substring(file.FileName.LastIndexOf("\\")+1);
+                PicImagen.Image = Image.FromFile(file.FileName);
+                txtImagen.Text = file.FileName.Substring(file.FileName.LastIndexOf("\\") + 1);
                 this._rutaOrigen = file.FileName;
 
             }
@@ -374,11 +394,61 @@ namespace Sistema.Presentacion
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            BarcodeStandard.Barcode Codigo = new BarcodeStandard.Barcode();
-            Codigo.IncludeLabel= true;
-            SKColorF skBackgroundColor = new SKColorF(1.0f, 1.0f, 1.0f); // Color blanco en formato SKColorF
-            SKColorF skForegroundColor = new SKColorF(0.0f, 0.0f, 0.0f);
-            pnlCodigo.BackgroundImage = Codigo.Encode(BarcodeStandard.Type.Code128, TxtCodigo.Text, skForegroundColor, skBackgroundColor, 104, 123);
+            BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
+            Codigo.IncludeLabel = true;
+            pnlCodigo.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, TxtCodigo.Text, Color.White, Color.Black, 400, 100);
+            btnGuardar.Enabled = true;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Image imgFinal = (Image)pnlCodigo.BackgroundImage.Clone();
+            SaveFileDialog dialogGuardar = new SaveFileDialog();
+            dialogGuardar.AddExtension = true;
+            dialogGuardar.Filter = "Image PNG (*.png)|*.png";
+            dialogGuardar.ShowDialog();
+            if (!string.IsNullOrEmpty(dialogGuardar.FileName))
+            {
+                imgFinal.Save(dialogGuardar.FileName, ImageFormat.Png);
+            }
+            imgFinal.Dispose();
+        }
+
+        private void btnInsertar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string rpta = "";
+                if (cboCategoria.Text == string.Empty||txtNombre.Text==string.Empty ||TxtStock.Text==string.Empty||TxtPrecioVenta.Text==string.Empty)
+                {
+                    this.MensajeError("Falta ingresar algunos datos, seran remarcados");
+                    ErrorIcono.SetError(cboCategoria, "Seleccione una categoria");
+                    ErrorIcono.SetError(TxtStock, "Ingresar stock.");
+                    ErrorIcono.SetError(TxtPrecioVenta, "Ingresar Precio de venta.");
+                    ErrorIcono.SetError(txtNombre, "Ingresar un nombre.");
+                }
+                else
+                {
+                    rpta = NArticulo.Insertar(Convert.ToInt32(cboCategoria.SelectedValue),txtNombre.Text.Trim(),TxtCodigo.Text,Convert.ToDecimal(TxtPrecioVenta.Text),Convert.ToInt32(TxtStock.Text),(txtImagen.Text).Trim(),txtDescripcion.Text.Trim());
+                    if (rpta.Equals("OK"))
+                    {
+                        this.MensajeOk("Se insertó de forma correcta el registro");
+                        if (txtImagen.Text != string.Empty) { 
+                            this._rutaOrigen = this._directorio + txtImagen.Text;
+                            File.Copy(this._rutaOrigen, this._rutaDestino);
+                        }
+                        this.Listar();
+                    }
+                    else
+                    {
+                        this.MensajeError(rpta);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
     }
 }

@@ -99,7 +99,7 @@ namespace Sistema.Datos
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 SqlCommand Comando = new SqlCommand("articulo_insertar", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
-                Comando.Parameters.Add("@idcategoria", SqlDbType.Int).Value = obj.IdArticulo;
+                Comando.Parameters.Add("@idcategoria", SqlDbType.Int).Value = obj.IdCategoria;
                 Comando.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 Comando.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 Comando.Parameters.Add("@codigo", SqlDbType.VarChar).Value = obj.Codigo;
